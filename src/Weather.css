@@ -1,0 +1,123 @@
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.weather-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65%;
+}
+
+.weather-select {
+  width: 40%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  width: 45%;
+  height: 18rem;
+}
+
+.display h1 {
+  font-size: 4rem;
+}
+
+.display img {
+  width: 18rem;
+  height: 18rem;
+}
+
+.weather-select input {
+  padding: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.427);
+  color: white;
+  width: 20rem;
+  height: 1.5rem;
+}
+
+.weather-select img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.weather-select button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-color: rgb(129, 129, 129);
+  color: white;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.celcius-des h1,h3{
+  margin: 0;
+}
+
+.celcius-des h3{
+  color: rgb(88, 88, 88);
+}
+
+.search-btn button{
+  cursor: pointer;
+  width: 3rem;
+  height: 3rem;
+}
+
+.search-btn img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.temperature-hot {
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.5848390381543243) 0%,
+    rgba(235, 255, 0, 0.46439085888261555) 64%,
+    rgba(255, 255, 255, 0.6800771333924195) 100%
+  );
+}
+
+.temperature-cold {
+  background: rgb(0, 46, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 46, 255, 0.5848390381543243) 0%,
+    rgba(0, 255, 249, 0.46439085888261555) 64%,
+    rgba(255, 255, 255, 0.6800771333924195) 100%
+  );
+}
+
+.logo{
+  cursor: pointer;
+  overflow: hidden;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 20px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.logo img{
+  width: 4rem;
+  height: 4rem;
+}
