@@ -10,16 +10,16 @@ import mist from "./assets/mist.png";
 import search from "./assets/search-icon.png";
 import "./Weather.css";
 import logo from "./assets/faviconlogo.png";
+import { apiKey } from "./config";
 
 function Weather() {
   const [weatherData, setWeatherData] = useState(null);
   const [city, setCity] = useState("");
-  const apiKey = "4d5d9ad5de6a86ec4c5ce14b257466cd";
 
   const fetchWeatherData = async () => {
     try {
       const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
       );
       setWeatherData(response.data);
     } catch (error) {
